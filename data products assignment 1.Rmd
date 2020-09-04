@@ -1,0 +1,22 @@
+---
+title: "Data products-assignment 1"
+output: html_document
+date: "September 3rd, 2020"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=23.585890, lng=58.405922, popup = "Muscat, Oman")
+
+my_map
+```
+
+
+
+
