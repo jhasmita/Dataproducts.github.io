@@ -1,0 +1,14 @@
+---
+title: "Assignment 2"
+output: html_document
+date: September 5th, 2020
+---
+
+```{r, echo=TRUE, message=FALSE}
+library("plotly")
+plot_ly(data = mtcars, x = ~wt, y = ~mpg, 
+        color = ~as.factor(cyl),
+        text = ~paste("Weight: ", wt, '<br>MPG:', mpg),
+        type = "scatter", mode = "markers") %>%
+  layout(title = "Dataset -Mtcars")
+```
